@@ -1,0 +1,13 @@
+﻿<AuthorizeView>
+    <Authorized>
+        <div class="justify-content-center text-center text-black">
+            <form method="post" action="Identity/Account/Logout">
+                <button type="submit" class="justify-content-center text-center nav-link btn btn-link text-black">Log out</button>
+            </form>
+        </div>
+    </Authorized>
+    <NotAuthorized>
+        <a href="Identity/Account/Register" class="text-black">Register</a>
+        <a href="Identity/Account/Login" class="text-black">Log in</a>
+    </NotAuthorized>
+</AuthorizeView>

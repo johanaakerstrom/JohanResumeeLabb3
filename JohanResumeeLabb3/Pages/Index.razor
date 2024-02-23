@@ -1,0 +1,18 @@
+﻿@page "/d"
+
+<PageTitle>Index</PageTitle>
+<AuthorizeView>
+    <NotAuthorized>
+        <div class="justify-content-center text-center mt-5">
+            <h1>You'll Need To Sign In</h1>
+        </div>
+    </NotAuthorized>
+</AuthorizeView>
+
+<AuthorizeView>
+    <div class="justify-content-center text-center mt-5">
+        <h1>Welcome, @context.User.Identity?.Name!</h1>
+    </div>
+</AuthorizeView>
+
+
